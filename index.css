@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round";
+    font-weight: bold;
+    color: white;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.6rem;
+}
+h4, p {
+    font-size: 1.2rem;
+}
+
+
+body{
+    display: grid;
+    grid-template-areas: "main-section" "footer";
+    grid-template-rows: auto auto;
+    height: auto;
+    background-color: rgb(24, 25, 29);
+}
+
+footer {
+    grid-area: footer;
+}
+
+.main-section {
+    grid-area: main-section;
+}
+/*Seção de estilo do study*/
+
+.section-study {
+    width: 100%;
+    height: 700px;
+}
+
+.study-container {
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 0px 10px 1px black;
+    border-left: solid 2px gray;
+    border-right: solid 2px gray;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.study-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.study-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px yellow;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.study-item ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.skills-box ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-box ul li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.skill-item {
+    height: 20px;
+    width: 200px;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-item::before, .skill-item::after {
+    content: '0%';
+    position: relative;
+    font-size: 15px;
+    color: black;
+}
+
+.skill-item::after {
+    content: '100%';
+}
+
+.skills-box {
+    border: solid 2px gray;
+    border-radius: 20px;
+    width: max-content;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.study-text {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+/*Fim*/

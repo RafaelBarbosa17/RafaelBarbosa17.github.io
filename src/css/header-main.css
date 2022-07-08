@@ -1,0 +1,46 @@
+
+.header-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-box-header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(10, 10, 10);
+    border-bottom: solid 2px white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-main li {
+    margin-left: 20px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.bottom-box-header {
+    width: 100%;
+}
+
+.profile-box {
+    width: 100px;
+    height: auto;
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+.profile-img img {
+    border: solid 2px white;
+    border-radius: 50%;
+}

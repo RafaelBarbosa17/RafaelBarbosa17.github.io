@@ -1,0 +1,127 @@
+
+.section-home {
+    margin-top: 70px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.title-main-container {
+    margin: auto;
+}
+
+.title-main {
+    /* text-decoration: underline; */
+    text-shadow: 0.3rem 0.2rem 0.1rem red;   
+}
+
+.saudation-box {
+    max-width: max-content;
+    margin: 30px auto;
+    background-color: red;
+    border: solid 2px black;
+    padding: 10px;
+}
+
+.saudation {
+    max-width: max-content;
+}
+
+.contact-container {
+    margin: 30px auto 0;
+    width: 100%;
+    border-top: solid 1px rgb(97, 95, 95);
+    border-bottom: solid 1px rgb(97, 95, 95);
+    padding: 30px 0;
+    box-shadow: 0px 10px 10px 1px black,
+    0px -3px 10px 1px black;
+}
+
+.contact-items a {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 2px white;
+    transition: all 500ms;
+    text-decoration: none;
+}
+
+.contact-items a svg {
+    width: 30px;
+    height: 30px;
+    transition: all 500ms;
+}
+
+.contact-items:hover > a{
+    color: black;
+    border: none;
+}
+
+.contact-items:nth-child(1):hover > a {
+    background-color: #25d366;
+}
+.contact-items:hover:nth-child(2) > a {
+    background: linear-gradient(to left, #002296, #82008f, #c0007a, #ea0c5f, #ff8820, #f6ba00);
+}
+.contact-items:hover:nth-child(3) > a {
+    background-color: #0a66c2;
+}
+.contact-items:hover:nth-child(4) > a {
+    background-color: #c6cdd5;
+}
+
+.contact-items:hover a > svg{
+    fill: black !important;
+}
+
+.contact-items {
+    max-width: max-content;
+    max-height: max-content;
+    border-radius: 20px;
+    transition: all 500ms;
+    list-style: none;
+}
+
+.contact-items:nth-child(1) {
+    box-shadow: 3px 4px 0px 0px #25d366;
+}
+.contact-items:nth-child(2) {
+    box-shadow: 3px 4px 0px 0px #c0007a;
+}
+.contact-items:nth-child(3) {
+    box-shadow: 3px 4px 0px 0px #0a66c2;
+}
+.contact-items:nth-child(4) {
+    box-shadow: 3px 4px 0px 0px #c6cdd5;
+}
+
+.contact-items:hover {
+    box-shadow: 6px 8px 0px 0px white;
+}
+
+.contact-items:nth-child(4):hover {
+    box-shadow: 6px 8px 0px 0px black;
+}
+
+.contact-box {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title-contact {
+    text-align: center;
+}
+
+.title-contact-box {
+    margin: 0px auto 20px;
+}
