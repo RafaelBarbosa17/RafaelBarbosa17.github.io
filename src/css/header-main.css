@@ -14,10 +14,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 40px;
+}
+
+.navigation-main {
+    height: 100%;
 }
 
 .nav-main {
+    height: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -26,6 +31,27 @@
     margin-left: 20px;
     list-style: none;
     font-size: 1.2rem;
+    height: 100%;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.nav-main li a {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-main li a:hover {
+    position: relative;
+    top: 5px;
+    right: 7px;
+    background-color: black;
+    box-shadow: 7px -5px 0px 0px white;
+    border: solid 1px red;
 }
 
 .bottom-box-header {

@@ -5,6 +5,7 @@
     font-family: "Varela Round";
     font-weight: bold;
     color: white;
+    z-index: 10;
 }
 
 html {
@@ -31,7 +32,7 @@ body{
     grid-template-areas: "main-section" "footer";
     grid-template-rows: auto auto;
     height: auto;
-    background-color: rgb(24, 25, 29);
+    background-color: #18191d;
 }
 
 footer {
@@ -41,92 +42,39 @@ footer {
 .main-section {
     grid-area: main-section;
 }
-/*Seção de estilo do study*/
+/* Background style */
 
-.section-study {
+/* .background-style-container {
+    position: fixed;
+    background-color: #18191d;
     width: 100%;
-    height: 700px;
+    height: 100%;
+    z-index: 0;
 }
 
-.study-container {
-    width: 90%;
-    margin: auto;
-    box-shadow: 0px 0px 10px 1px black;
-    border-left: solid 2px gray;
-    border-right: solid 2px gray;
-    padding: 30px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.light {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    /* animation: movement 5s linear infinite; */
+    border-radius: 50%;
 }
 
-.study-box {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 10px;
-}
-
-.study-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px yellow;
-    border-radius: 20px;
-    padding: 15px;
-}
-
-.study-item ul li{
-    list-style: none;
-    text-align: center;
-}
-
-.skills-box ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.skills-box ul li {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.skill-item {
-    height: 20px;
-    width: 200px;
-    background-color: yellow;
-    display: flex;
-    justify-content: space-between;
-}
-
-.skill-item::before, .skill-item::after {
-    content: '0%';
-    position: relative;
-    font-size: 15px;
-    color: black;
-}
-
-.skill-item::after {
-    content: '100%';
-}
-
-.skills-box {
-    border: solid 2px gray;
-    border-radius: 20px;
-    width: max-content;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-.study-text {
-    width: 80%;
-    margin: auto;
-}
-
-
-
+@keyframes movement {
+    0% {
+        bottom: 0;
+        box-shadow: 0px 0px 10px 0px red;
+    }
+    100% {
+        bottom: 100vh;
+        box-shadow: 0px 0px 50px 10px red,
+        0px 0px 20px 5px red,
+        0px 0px 10px 0px red,
+        0px 0px 5px 0px red;
+    }
+} */
 
 /*Fim*/
